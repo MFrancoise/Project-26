@@ -25,7 +25,7 @@ jobs:
           # LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
           LATEST_COMMIT_SHA=${GITHUB_SHA::6}
           echo "Built at $CURRENT_DATE"
-          echo "Built commit ref -> $LATEST_COMMIT_SHA*
+          echo "Built commit ref -> $LATEST_COMMIT_SHA"
 
 
 

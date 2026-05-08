@@ -37,7 +37,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: Testing
-          run: echo "Jobs running in parallel"
-
+          run: |
+              echo "========================================="
+              echo "Received output of current date which is: ${{ needs.generate-info.outputs.current-date }}"
+              echo "+++++++++++++++++++++++++++++++++++++++++"
+              echo "Received output of latest commit sha which is: ${{ needs.generate-info.outputs.commit_sha }}
+              echo "========================================="
 
 

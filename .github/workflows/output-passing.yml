@@ -31,7 +31,13 @@ jobs:
           echo "Built commit ref -> $LATEST_COMMIT_SHA"
           echo "current-date=$CURRENT_DATE" >> $GITHUB_OUTPUT
           echo "commit_sha=$LATEST_COMMIT_SHA" >> $GITHUB_OUTPUT
-          printenv
+          
+  consume-info: 
+      needs: generate-info
+      runs-on: ubuntu-latest
+      steps:
+        - name: Testing
+        - run: echo "Jobs running in parallel"
 
 
 

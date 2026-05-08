@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: Testing
-        - run: echo "Jobs running in parallel"
+          run: echo "Jobs running in parallel"
 
 
 

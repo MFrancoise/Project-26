@@ -7,14 +7,14 @@ on:
     
   pull_request:
     branches:
-      - main:
+      - main
 
-  worflow_dispatch:
+  workflow_dispatch:
 
 jobs: 
-  generate-info
+  generate-info:
     runs-on: ubuntu-latest
     steps:
     - name: Purpose
-        run: echo "Generating repository information..."
+      run: echo "Generating repository information..."
 
